@@ -1,6 +1,5 @@
 local lush = require("lush")
 local base = require("couleur.base")
-local colors = require("couleur.colors")
 --[[ local plugins = require("couleur.plugins.highlights")
 local languages = require("couleur.languages") ]]
 local loader = require("couleur.utils.loader")
@@ -14,7 +13,7 @@ local function setup(user_config)
 
 	local load_plugins = loader.load_plugins(config)
 	local load_langs = loader.load_langs(config)
-	return lush.merge({colors, base, load_plugins, load_langs})
+	return lush.merge({base, load_plugins, load_langs})
 end
 
 return {setup = setup}

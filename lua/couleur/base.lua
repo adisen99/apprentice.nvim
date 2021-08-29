@@ -1,5 +1,5 @@
 local lush = require("lush")
-local colors = require("couleur.colors")
+local colors = require("couleur.config").colors
 local styles = require("couleur.settings").styles
 local utils = require("couleur.utils")
 
