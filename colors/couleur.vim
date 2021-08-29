@@ -1,6 +1,7 @@
 " reloading all couleur highlights
 lua << EOF
 package.loaded["couleur"] = nil
+package.loaded["couleur.colors"] = nil
 package.loaded["couleur.base"] = nil
 package.loaded["couleur.plugins"] = nil
 package.loaded["couleur.languages"] = nil
