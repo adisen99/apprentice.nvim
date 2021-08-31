@@ -235,7 +235,7 @@ local base_group = lush(function()
       bg = improved_strings_bg,
       gui = improved_strings_gui,
     },
-    Character {ApprenticeFg1},
+    Character {ApprenticeOrange},
     Number {ApprenticeOrange},
     Boolean {ApprenticeOrange},
     Float {ApprenticeOrange},
