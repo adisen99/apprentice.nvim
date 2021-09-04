@@ -92,7 +92,7 @@ local improved_strings_fg = fg1
 local improved_strings_bg = bg1
 local improved_strings_gui = styles.italic_strings
 
-local special_string_fg = orange
+local special_string_fg = green
 local special_string_bg = bg1
 local special_string_gui = styles.italic_strings
 
