@@ -79,7 +79,7 @@ colors.purple = purple
 colors.aqua = aqua
 colors.orange = orange
 
-local hls_cursor = utils.get_color_from_var(vim.g.apprentice_hls_cursor, orange, colors)
+local hls_cursor = utils.get_color_from_var(vim.g.apprentice_hls_cursor, aqua, colors)
 local hls_highlight = utils.get_color_from_var(vim.g.apprentice_hls_highlight, bg3,
                                                colors)
 local number_column = utils.get_color_from_var(vim.g.apprentice_number_column, nil, colors)
