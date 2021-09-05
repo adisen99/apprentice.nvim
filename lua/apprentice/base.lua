@@ -224,7 +224,7 @@ local base_group = lush(function()
     TabLine {fg = bg4, bg = bg1, gui = styles.invert_tabline},
     TabLineSel {fg = tabline_sel, bg = bg1, gui = styles.invert_tabline},
     Title {fg = fg0, gui = styles.bold},
-    Visual {bg = blue},
+    Visual {bg = bg3},
     VisualNOS {Visual},
     -- WarningMsg {ApprenticeRedBold},
     WildMenu {fg = blue, bg = bg2, gui = styles.bold},
