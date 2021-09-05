@@ -80,7 +80,7 @@ colors.aqua = aqua
 colors.orange = orange
 
 local hls_cursor = utils.get_color_from_var(vim.g.apprentice_hls_cursor, aqua, colors)
-local hls_highlight = utils.get_color_from_var(vim.g.apprentice_hls_highlight, bg3,
+local hls_highlight = utils.get_color_from_var(vim.g.apprentice_hls_highlight, purple,
                                                colors)
 local number_column = utils.get_color_from_var(vim.g.apprentice_number_column, nil, colors)
 local color_column = utils.get_color_from_var(vim.g.apprentice_color_column, bg1, colors)
@@ -203,15 +203,15 @@ local base_group = lush(function()
     IncSearch {fg = hls_cursor, bg = bg0, gui = styles.inverse},
     LineNr {fg = bg4, bg = number_column},
     CursorLineNr {fg = aqua, bg = bg1},
-    MatchParen {bg = yellow, gui = styles.bold},
+    MatchParen {bg = bg3, gui = styles.bold},
     --[[ ModeMsg {ApprenticeYellowBold},
     MoreMsg {ApprenticeYellowBold}, ]]
     NonText {ApprenticeBg2},
     Normal {fg = fg1, bg = background},
     Pmenu {fg = fg1, bg = bg2},
-    PmenuSel {fg = bg2, bg = colors.neutral_aqua, gui = styles.bold},
+    PmenuSel {fg = bg2, bg = blue, gui = styles.bold},
     PmenuSbar {bg = bg2},
-    PmenuThumb {fg = colors.neutral_aqua, bg = colors.neutral_aqua},
+    PmenuThumb {bg = bg4},
     Question {ApprenticeGreenBold},
     QuickFixLine {fg = bg0, bg = bg3, gui = styles.bold},
     Search {fg = hls_highlight, bg = bg0, gui = styles.inverse},
