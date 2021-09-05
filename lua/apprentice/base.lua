@@ -209,7 +209,7 @@ local base_group = lush(function()
     NonText {ApprenticeBg2},
     Normal {fg = fg1, bg = background},
     Pmenu {fg = fg1, bg = bg2},
-    PmenuSel {fg = bg2, bg = blue, gui = styles.bold},
+    PmenuSel {fg = bg2, bg = aqua, gui = styles.bold},
     PmenuSbar {bg = bg2},
     PmenuThumb {bg = bg4},
     Question {ApprenticeGreenBold},
