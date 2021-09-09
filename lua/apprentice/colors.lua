@@ -33,7 +33,7 @@ return {
   error = hsl("#900708"),
 	faded_red = hsl("#af5f5f"),
   faded_green = hsl("#5f875f"),
-  faded_yellow = hsl("#ffffaf"),
+  faded_yellow = hsl("#dad085"),
   faded_blue = hsl("#5787af"),
   faded_purple = hsl("#5f5f87"),
   faded_aqua = hsl("#5f8787"),
