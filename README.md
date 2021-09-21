@@ -47,6 +47,7 @@ require('lush')(require('apprentice').setup({
     "nerdtree",
     "netrw",
     "nvimtree",
+    "neogit",
     "signify",
     "startify",
     "syntastic",
@@ -117,6 +118,7 @@ let g:apprentice_contrast_light = "soft"
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
 
 # Screenshots
 
