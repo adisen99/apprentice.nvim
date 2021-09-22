@@ -25,8 +25,8 @@ local M = {}
 M = lush(function()
 	return {
     -- Neogit
-  NeogitNotificationInfo {base.CodeschoolGreen},
-  NeogitNotificationWarning {base.CodeschoolYellow},
+  NeogitNotificationInfo {base.ApprenticeGreen},
+  NeogitNotificationWarning {base.ApprenticeYellow},
   NeogitNotificationError {fg = colors.faded_red},
   NeogitDiffAddHighlight {bg = neogitbg2, fg = neogitaddfg},
   NeogitDiffDeleteHighlight {bg = neogitbg2, fg = neogitdelfg},
