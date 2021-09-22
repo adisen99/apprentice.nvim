@@ -12,13 +12,13 @@ local neogitbg3 = colors.dark4
 local neogitfg1 = colors.light3
 local neogitfg2 = colors.light2
 
---[[ elseif vim.o.background == 'light' then
-  Neogitbg1 = colors.light2
-  Neogitbg2 = colors.light3
-  Neogitbg3 = colors.light4
-  Neogitfg1 = colors.dark2
-  Neogitfg2 = colors.dark3
-end ]]
+if vim.o.background == 'light' then
+  neogitbg1 = colors.light2
+  neogitbg2 = colors.light3
+  neogitbg3 = colors.light4
+  neogitfg1 = colors.dark2
+  neogitfg2 = colors.dark3
+end
 
 local M = {}
 
