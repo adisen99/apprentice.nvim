@@ -8,8 +8,8 @@ M = lush(function()
 	return {
     -- nvim-cmp
     CmpItemKind {base.ApprenticeAqua},
-    -- CmpItemAbbrMatch {base.ApprenticeAquaBold},
-    -- CmpItemAbbr {base.ApprenticeFg1},
+    CmpItemAbbrMatch {base.ApprenticeFg1},
+    CmpItemAbbr {base.ApprenticeFg4},
     CmpItemMenu {base.ApprenticeBlue}
 	}
 end)
