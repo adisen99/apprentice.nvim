@@ -39,6 +39,7 @@ require('lush')(require('apprentice').setup({
   plugins = {
     "buftabline",
     "coc",
+    "cmp", -- nvim-cmp
     "fzf",
     "gitgutter",
     "gitsigns",
@@ -113,6 +114,7 @@ let g:apprentice_contrast_light = "soft"
 
 # Additional supported plugins
 
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-startify](https://github.com/mhinz/vim-startify)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
