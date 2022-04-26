@@ -1,8 +1,14 @@
 -- lsp highlights
 local lush = require("lush")
 local base = require("apprentice.base")
+local colors = require("apprentice.colors")
+local utils = require("apprentice.utils")
+local styles = require("apprentice.settings").styles
 
 local M = {}
+
+local hls_lspreference = utils.get_color_from_var(vim.g.apprentice_hls_lspreference, base.yellow,
+                                               colors)
 
 M = lush(function()
 	return {
@@ -28,9 +34,9 @@ M = lush(function()
     LspDiagnosticsVirtualTextWarning {base.ApprenticeWarning},
     LspDiagnosticsVirtualTextInformation {base.ApprenticeBlue},
     LspDiagnosticsVirtualTextHint {base.ApprenticeAqua},
-    -- LspReferenceRead {base.ApprenticeYellowBold},
-    -- LspReferenceText {base.ApprenticeYellowBold},
-    -- LspReferenceWrite {base.ApprenticeYellowBold},
+    LspReferenceRead {fg = hls_lspreference, bg = base.bg0, gui = styles.inverse},
+    LspReferenceText {fg = hls_lspreference, bg = base.bg0, gui = styles.inverse},
+    LspReferenceWrite {fg = hls_lspreference, bg = base.bg0, gui = styles.inverse},
 	}
 end)
 

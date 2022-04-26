@@ -15,6 +15,7 @@ local settings = {
   invert_selection = true,
   invert_tabline = false,
   italicize_comments = true,
+  italicize_booleans = false,
   italicize_strings = false,
   invert_intend_guides = false,
 }
@@ -29,6 +30,7 @@ local styles = {
   invert_selection = "inverse",
   invert_tabline = "",
   italic_comments = "italic",
+  italic_booleans = "NONE",
   italic_strings = "NONE",
 }
 
@@ -79,6 +81,10 @@ end
 
 if not utils.tobool(vim.g.apprentice_italicize_comments) then
   styles.italic_comments = "NONE"
+end
+
+if utils.tobool(vim.g.apprentice_italicize_booleans) then
+  styles.italic_booleans = "italic"
 end
 
 if utils.tobool(vim.g.apprentice_italicize_strings) then

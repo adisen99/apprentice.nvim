@@ -111,6 +111,17 @@ lua vim.g.apprentice_contrast_light = "soft"
 " or
 let g:apprentice_contrast_light = "soft"
 ```
+- Setting miscellaneous options
+
+```lua
+g.apprentice_hls_lspreference = "bright_yellow"
+g.apprentice_hls_cursor = "bright_yellow"
+g.apprentice_hls_highlight = "bright_yellow"
+g.apprentice_italicize_booleans = true
+g.apprentice_tabline_sel = "fg0"
+}))
+```
+
 **For more Configuration option** - go to the [CONFIGURATION](https://github.com/adisen99/apprentice.nvim/wiki/Configuration) page in the [WIKI](https://github.com/adisen99/apprentice.nvim/wiki)
 
 # Additional supported plugins
