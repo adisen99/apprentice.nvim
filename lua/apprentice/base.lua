@@ -237,7 +237,7 @@ local base_group = lush(function()
     },
     Character {ApprenticeOrange},
     Number {ApprenticeOrange},
-    Boolean {ApprenticeOrange},
+    Boolean {fg = orange, gui = styles.italic_booleans},
     Float {ApprenticeOrange},
     Identifier {fg = colors.neutral_blue},
     Function {ApprenticeYellow},
