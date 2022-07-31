@@ -34,9 +34,9 @@ M = lush(function()
     LspDiagnosticsVirtualTextWarning {base.ApprenticeWarning},
     LspDiagnosticsVirtualTextInformation {base.ApprenticeBlue},
     LspDiagnosticsVirtualTextHint {base.ApprenticeAqua},
-    LspReferenceRead {bg = colors.dark0, fg = hls_lspreference},
-    LspReferenceText {bg = colors.dark0, fg = hls_lspreference},
-    LspReferenceWrite {bg = colors.dark0, fg = hls_lspreference},
+    LspReferenceRead {fg = colors.dark0, bg = hls_lspreference},
+    LspReferenceText {fg = colors.dark0, bg = hls_lspreference},
+    LspReferenceWrite {fg = colors.dark0, bg = hls_lspreference},
 	}
 end)
 
