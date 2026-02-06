@@ -87,7 +87,6 @@ local color_column = utils.get_color_from_var(vim.g.apprentice_color_column, bg1
 local vert_split = utils.get_color_from_var(vim.g.apprentice_vert_split, bg0, colors)
 local win_separator = utils.get_color_from_var(vim.g.apprentice_win_separator, bg0, colors)
 local tabline_sel = utils.get_color_from_var(vim.g.apprentice_tabline_sel, blue, colors)
-local sign_column = utils.get_color_from_var(vim.g.apprentice_sign_column, bg1, colors)
 
 local improved_strings_fg = fg1
 local improved_strings_bg = bg1
@@ -105,9 +104,11 @@ if not utils.tobool(vim.g.apprentice_improved_strings) then
 end
 
 local background = nil
+local sign_column = nil
 
 if not utils.tobool(vim.g.apprentice_transparent_bg) then
   background = bg0
+  sign_column = utils.get_color_from_var(vim.g.apprentice_sign_column, bg1, colors)
 end
 
 -- neovim terminal mode colors
@@ -224,7 +225,7 @@ local base_group = lush(function()
     TabLine { fg = bg4, bg = bg1, gui = styles.invert_tabline },
     TabLineSel { fg = tabline_sel, bg = bg1, gui = styles.invert_tabline },
     Title { fg = fg0, gui = styles.bold },
-    Visual { bg = bg4 },
+    Visual { bg = bg4, gui = styles.invert_selection },
     VisualNOS { Visual },
     -- WarningMsg {ApprenticeRedBold},
     WildMenu { fg = blue, bg = bg2, gui = styles.bold },
