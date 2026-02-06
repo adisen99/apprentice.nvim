@@ -28,7 +28,7 @@ local styles = {
   undercurl = "undercurl",
   invert_signs = "",
   invert_selection = "reverse",
-  invert_tabline = "",
+  invert_tabline = "reverse",
   italic_comments = "italic",
   italic_booleans = "NONE",
   italic_strings = "NONE",
@@ -75,8 +75,8 @@ if not utils.tobool(vim.g.apprentice_invert_selection) then
   styles.invert_selection = "NONE"
 end
 
-if utils.tobool(vim.g.apprentice_invert_tabline) then
-  styles.invert_tabline = "reverse"
+if not utils.tobool(vim.g.apprentice_invert_tabline) then
+  styles.invert_tabline = "NONE"
 end
 
 if not utils.tobool(vim.g.apprentice_italicize_comments) then
@@ -91,4 +91,4 @@ if utils.tobool(vim.g.apprentice_italicize_strings) then
   styles.italic_strings = "italic"
 end
 
-return {settings = settings, styles = styles}
+return { settings = settings, styles = styles }
